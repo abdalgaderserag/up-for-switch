@@ -56,7 +56,10 @@ class ItemController extends Controller
      */
     public function update(Request $request, Item $item)
     {
-        //
+        $item->name = $request->name;
+//        TODO etc
+        $item->save();
+        return $this->dataResponse($item);
     }
 
     /**
@@ -67,6 +70,7 @@ class ItemController extends Controller
      */
     public function destroy(Item $item)
     {
-        //
+        $item->delete();
+        return $this->dataResponse($item);
     }
 }

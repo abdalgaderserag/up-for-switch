@@ -1,2 +1,27 @@
 // Variables
 @import 'variables';
+
+.content{
+  width: $full-page;
+  background-color: $white-gray;
+}
+
+.main-content{
+  width: $main-content;
+  margin-left: $main-content-margin;
+}
+
+.item-bar{
+  width: $full-page;
+}
+
+.flex-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item-card {
+  width: $item-card-width;
+  background-color: $white;
+}
